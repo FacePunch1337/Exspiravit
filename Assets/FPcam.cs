@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class FPcam : MonoBehaviour
 {
@@ -14,7 +15,10 @@ public class FPcam : MonoBehaviour
     private float rotationX;
     private float rotationY;
 
+    private GameManager gameManager;
     private Player player;
+    private Options options;
+    
     Quaternion rot = new Quaternion(0f, 0.40120f, 0f, 0f);
 
 
@@ -26,27 +30,31 @@ public class FPcam : MonoBehaviour
         Cursor.visible = false;
         TryGetComponent(out Player _player);
         player = _player;
-        
+
+        options = GameObject.Find("GameManager").GetComponent<GameManager>().GetComponentInChildren<Options>();
 
         //transform.rotation = rot;
-        
+
     }
 
 
 
+   
 
-
-
+    private void PlayerSettings()
+    {
+        cameraSensitivity = options.sensitivitySliderValue;
+    }
 
 
 
     private void Update()
     {
-        if (player.end)
-        {
-            
-            
-        }
+        
+        PlayerSettings();
+        
+       
+
         this.rotationX += Input.GetAxis("Mouse X") * this.cameraSensitivity * Time.deltaTime;
         this.rotationY -= Input.GetAxis("Mouse Y") * this.cameraSensitivity * Time.deltaTime;
         this.rotationY = Mathf.Clamp(this.rotationY, -90f, 90f);
@@ -57,8 +65,8 @@ public class FPcam : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
-        
-       
+
+
         
 
         // else if(!player.look) transform.rotation = player.lastRot;

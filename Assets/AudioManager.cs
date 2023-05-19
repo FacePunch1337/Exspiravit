@@ -1,18 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+
 
 public class AudioManager : MonoBehaviour
 {
     public AudioClip[] soundtracks;
     private AudioSource musicSource;
+    public float soundVolume;
+    public float musicVolume;
+    
+    public Options options;
 
     private void Start()
     {
         musicSource = this.gameObject.AddComponent<AudioSource>();
         PlaySceneSoundtrack();
+      
+
     }
+    private void Update()
+    {
+
+        AudioSettings();
+
+    }
+
+    private void AudioSettings()
+    {
+        musicSource.volume = options.musicSliderValue;
+        
+    }
+
+   
 
     private void PlaySceneSoundtrack()
     {
@@ -42,6 +64,7 @@ public class AudioManager : MonoBehaviour
                 musicSource.clip = soundtrack;
                 musicSource.loop = true;
                 musicSource.Play();
+
                 return;
             }
         }
@@ -69,4 +92,7 @@ public class AudioManager : MonoBehaviour
         musicSource.Stop(); // остановить воспроизведение
     }
 
+    
+
+   
 }

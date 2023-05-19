@@ -1,24 +1,45 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject playerPrefab;
     public Transform spawnPoint;
-    
+ 
+   
 
 
     private void Start()
     {
-        SpawnPlayer();
-        playerPrefab.TryGetComponent(out FadeCamera fadeCamera);
-        fadeCamera.gameStart = true;
+       
+       
+
+        if (spawnPoint != null)
+        {
+            SpawnPlayer();
+            playerPrefab.TryGetComponent(out FadeCamera fadeCamera);
+            fadeCamera.gameStart = true;
+        }
+        else spawnPoint = null;
+
+       
+
+
+
 
 
 
 
     }
+    private void Update()
+    {
+       
+    }
+
+   
 
     public void SpawnPlayer()
     {

@@ -163,6 +163,7 @@ MonoBehaviour:
   slowMoveFactor: 0.25
   fastMoveFactor: 5
   shiftSpeedLerp: 20
+  options: {fileID: 4440131048114177174, guid: 21ea6382237056c469a15dcf43005228, type: 3}
 --- !u!114 &7304636237820543414
 MonoBehaviour:
   m_ObjectHideFlags: 0

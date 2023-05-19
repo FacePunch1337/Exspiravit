@@ -12,7 +12,7 @@ public class Portal : MonoBehaviour
     bool isFirst = true;
     void OnBecameVisible()
     {
-        if (isFirst && SceneManager.GetActiveScene().buildIndex == 0)
+        if (isFirst && SceneManager.GetSceneByName("Graveyard").isLoaded)
         {
             audioManager.PlaySoundtrack("vita animarum");
             isFirst = false;
