@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 656e0ae94a807344a899d75119120121
+  - enabled: 1
+    path: Assets/Scenes/Levels/1/Introduction.unity
+    guid: 3e8b0312fef527844bdb509d010a63e8
+  - enabled: 1
+    path: Assets/Scenes/Levels/2/Graveyard.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Levels/2/Corridors.unity
+    guid: 4481e624daf8c164c8b8e9afd2690571
+  - enabled: 1
+    path: Assets/Scenes/Levels/2/Pontis.unity
+    guid: 406089c292ac52648adbad45ad7cee71
+  - enabled: 1
+    path: Assets/Scenes/Levels/2/VOID.unity
+    guid: 1925fd340a5a28d45a52e0cddb03c4fa
+  - enabled: 1
+    path: Assets/Scenes/Levels/3/Darkness.unity
+    guid: 8edac874a6fcf0a4698e320916fcb1cb
+  - enabled: 1
+    path: Assets/Scenes/Levels/3/Philosophy.unity
+    guid: 141fb2e030de71e4eaeadf769f66187b
+  - enabled: 1
+    path: Assets/Scenes/Levels/3/Forest and City.unity
+    guid: 0efd6ef64522df544a672cb8b6ced637
+  - enabled: 1
+    path: Assets/Scenes/Levels/3/Flat/Flat.unity
+    guid: 4b42dec1ce68ec6479e213383e22ced8
+  - enabled: 1
+    path: Assets/Scenes/Levels/3/Digital/Digital.unity
+    guid: 68a579e5598bbf543b9c2f0e2e5ea064
+  - enabled: 1
+    path: Assets/Scenes/Levels/3.5/Final cutscene.unity
+    guid: 4da53e094b0f735408f1163cbb2a97fc
+  - enabled: 1
+    path: Assets/Scenes/Levels/4/CORRUPTED WORLD/CORRUPTED WORLD.unity
+    guid: 337277856c72ce8448b69562fc8f8c78
+  m_configObjects: {}
