@@ -15,9 +15,9 @@ public class MenuManager : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
 
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         options.SetActive(false);
         controls.SetActive(false);
 
@@ -25,6 +25,8 @@ public class MenuManager : MonoBehaviour
         {
             main.SetActive(true);
             isMainMenu = true;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
     private void Update()
@@ -34,20 +36,23 @@ public class MenuManager : MonoBehaviour
     }
     public void Menu()
     {
-
         if (Input.GetKeyDown(KeyCode.Escape) && !isOpen)
         {
-           
             main.SetActive(true);
             isOpen = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && isOpen)
         {
-            
             main.SetActive(false);
             isOpen = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
+
+
 
     public void Play()
     {

@@ -2222,6 +2222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundtracks:
+  - {fileID: 8300000, guid: d91ae926bfb740d4cafd2055a79caef7, type: 3}
   - {fileID: 8300000, guid: 0e1899055e73a4b4ca8f24e36d6b1580, type: 3}
   - {fileID: 8300000, guid: f8f9e97a4b536d0499dce2588cf78054, type: 3}
   - {fileID: 8300000, guid: 0335d8c8397fbb542a0631feea128887, type: 3}
@@ -2231,10 +2232,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 590ad418d0188724db978fe7f0615316, type: 3}
   - {fileID: 8300000, guid: 245dbcaf2d01d8d41b5ac4e4820b358b, type: 3}
   - {fileID: 8300000, guid: 8fccc3f0add1fa447a3697e721032ae8, type: 3}
+  - {fileID: 8300000, guid: 97eecf64ba775db42987b19626e57f76, type: 3}
   - {fileID: 8300000, guid: 3fc573c22fc3b8b4abcba29dfaa60625, type: 3}
   - {fileID: 8300000, guid: 5400780a24be2ab45ad40b1d24a2e6d5, type: 3}
   - {fileID: 8300000, guid: cf49a2d6275a90f48818edaeb94d432e, type: 3}
-  - {fileID: 8300000, guid: d91ae926bfb740d4cafd2055a79caef7, type: 3}
   soundVolume: 0
   musicVolume: 0
   options: {fileID: 5743706369439117450}
